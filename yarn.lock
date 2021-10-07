@@ -216,7 +216,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@react-three/drei@^7.12.6":
+"@react-three/drei@7.12.6":
   version "7.12.6"
   resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-7.12.6.tgz#9d09d493e39e7d4505f3e4f97c3c93b3115dab6d"
   integrity sha512-JCj1HUMBowLzLxwalDm4XU1JN+YGnceYFqYidtpsKwmGC0I7UPKpV9MmNFG3yCby27y5NkA0G9ZfsX4IyaE05g==
@@ -237,7 +237,7 @@
     utility-types "^3.10.0"
     zustand "^3.5.1"
 
-"@react-three/fiber@^7.0.9":
+"@react-three/fiber@7.0.9":
   version "7.0.9"
   resolved "https://registry.yarnpkg.com/@react-three/fiber/-/fiber-7.0.9.tgz#8805d25f51f5c50fc71bba4d57c2779f63f22aa7"
   integrity sha512-NCeqJxHvQVkcJpQJHddtt6uT9/qHrM7mJi0PjCoXLdC9NaPC9v2G3kT35a+CGxaKnCPaB9kDXi3vQ5scCqN1wg==
@@ -287,7 +287,7 @@
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
   integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
 
-"@types/three@^0.132.2":
+"@types/three@0.132.2":
   version "0.132.2"
   resolved "https://registry.yarnpkg.com/@types/three/-/three-0.132.2.tgz#80dad683a326e1eb7a87d388e10188b7beb41a18"
   integrity sha512-DpaP0sObpHvKX8zdfCqyTK526N8lQ86Qstp6MnQJ3jNYie7Bv9AMRTALuoIH8dgVZ62z9twuNvEarWHXOZwmSw==
@@ -3246,7 +3246,7 @@ three-stdlib@^2.4.2:
     potpack "^1.0.1"
     zstddec "^0.0.2"
 
-three@^0.133.1:
+three@0.133.1:
   version "0.133.1"
   resolved "https://registry.yarnpkg.com/three/-/three-0.133.1.tgz#5606f4817d67a09d9212d4ccbd6826564774f8f4"
   integrity sha512-WydohO8ll949B0FTD6MGz59Yv2Lwj8hvObg/0Heh2r42S6+tQC1WByfCNRdmG4D7+odfGod+n8JPV1I2xrboWw==
