@@ -1,17 +1,9 @@
 import React, { Suspense, VFC } from "react";
 import { Canvas, useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import {
-  Environment,
-  Html,
-  OrbitControls,
-  useProgress,
-} from "@react-three/drei";
+import { Environment, OrbitControls } from "@react-three/drei";
 
-const Loader: VFC = () => {
-  const { progress } = useProgress();
-  return <Html center>{progress} % loaded</Html>;
-};
+import { Loader } from "src/components/Loder";
 
 const Model: VFC = () => {
   const gltf = useLoader(GLTFLoader, "./assets/Bauhaus.gltf");
