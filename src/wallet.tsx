@@ -1,8 +1,10 @@
 import { Button, Container, Box } from "@chakra-ui/react";
-import { Web3Provider } from "@ethersproject/providers";
+import { Web3Provider, EtherscanProvider } from "@ethersproject/providers";
+import { formatEther } from "@ethersproject/units";
 import { useWeb3React, Web3ReactProvider } from "@web3-react/core";
 import { InjectedConnector } from "@web3-react/injected-connector";
-import React, { useEffect, useState, VFC } from "react";
+import React, { VFC } from "react";
+import useSWR from "swr";
 
 export const injectedConnector = new InjectedConnector({
   supportedChainIds: [
@@ -20,8 +22,20 @@ const getLibrary = (provider: any) => {
   return library;
 };
 
+const fetcher =
+  (library?: Web3Provider) =>
+  (...args: any) => {
+    const [method, ...params] = args;
+    if (library === undefined) return;
+    return library[method](...params);
+  };
+
 const Wallet: VFC = () => {
-  const { chainId, account, activate, active } = useWeb3React<Web3Provider>();
+  const { chainId, account, activate, active, library } =
+    useWeb3React<Web3Provider>();
+  const { data: balance } = useSWR(["getBalance", account, "latest"], {
+    fetcher: fetcher(library),
+  });
 
   const connect = async () => {
     activate(injectedConnector);
@@ -36,6 +50,7 @@ const Wallet: VFC = () => {
     <Container centerContent>
       <Box>ChainId: {chainId}</Box>
       <Box>Account: {account}</Box>
+      {/* <Box>Ξ {parseFloat(formatEther(balance)).toPrecision(4)}</Box> */}
       {!active && <Button onClick={connect}>Connect Wallet</Button>}
     </Container>
   );
