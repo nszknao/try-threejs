@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@chakra-ui/react": "1.6.9",
-    "@emotion/react": "11.4.1",
-    "@emotion/styled": "11.3.0",
+    "@emotion/react": "11.13.3",
+    "@emotion/styled": "11.13.0",
     "@ethersproject/providers": "5.4.5",
     "@ethersproject/units": "^5.4.0",
     "@react-three/drei": "7.12.6",
