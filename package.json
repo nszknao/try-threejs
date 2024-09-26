@@ -23,11 +23,11 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "swr": "^1.0.1",
-    "three": "0.133.1"
+    "three": "0.169.0"
   },
   "devDependencies": {
     "@types/react": "17.0.27",
-    "@types/three": "0.133.0",
+    "@types/three": "0.169.0",
     "eslint": "8.0.0",
     "eslint-config-next": "11.1.2",
     "typescript": "4.4.3"
